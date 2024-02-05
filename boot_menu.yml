@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: blue-build/template
+  - label: carrotmanmatt/carrot-kinoite-nvidia
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: blue-build/template
+      - label: carrot-kinoite-nvidia
