@@ -22,7 +22,6 @@ modules:
       - nano
       - nano-default-editor
       - vim-default-editor
-      - gparted
 
   - type: default-flatpaks
     system:
