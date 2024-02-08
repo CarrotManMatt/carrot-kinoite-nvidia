@@ -21,7 +21,6 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
-      - vim-default-editor
 
   - type: default-flatpaks
     system:
