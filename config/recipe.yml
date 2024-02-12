@@ -21,12 +21,13 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
+      - dnf-command(config-manager)
 
   - type: rpm-ostree
     repos:
       - https://packages.twingate.com/rpm/
     install: 
-      - twingate
+      - twingate-latest
 
   - type: default-flatpaks
     notify: true
