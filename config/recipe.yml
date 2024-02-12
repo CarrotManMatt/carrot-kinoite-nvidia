@@ -21,10 +21,38 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
+  - type: rpm-ostree
+    repos:
+      - https://packages.twingate.com/rpm/
+    install: 
+      - twingate
 
   - type: default-flatpaks
+    notify: true
     system:
       remove:
         - org.gnome.eog
+      install:
+        - com.google.Chrome
+        - com.discordapp.Discord
+        - org.linuxshowplayer.LinuxShowPlayer
+        - com.valvesoftware.Steam
+        - com.jetbrains.PyCharm-Professional
+        - com.getpostman.Postman
+        - com.jetbrains.IntelliJ-IDEA-Ultimate
+        - com.jetbrains.GoLand
+        - org.audacityteam.Audacity
+        - org.gimp.GIMP
+        - org.blender.Blender
+        - com.obsproject.Studio
+        - com.spotify.Client
+        - com.nextcloud.desktopclient.nextcloud
+        - com.bitwarden.desktop
+        - org.openstreetmap.josm
+        - md.obsidian.Obsidian
+        - com.stremio.Stremio
+        - org.videolan.VLC
+        - us.zoom.Zoom
+        - io.github.mimbrero.WhatsAppDesktop
 
   - type: signing
