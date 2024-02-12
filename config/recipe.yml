@@ -16,12 +16,12 @@ modules:
   - type: rpm-ostree
     install:
       - micro
+      - dnf-command(config-manager)
     remove:
       - firefox
       - firefox-langpacks
       - nano
       - nano-default-editor
-      - dnf-command(config-manager)
 
   - type: rpm-ostree
     repos:
