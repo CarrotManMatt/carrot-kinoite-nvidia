@@ -21,6 +21,7 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
+
   - type: rpm-ostree
     repos:
       - https://packages.twingate.com/rpm/
