@@ -23,17 +23,11 @@ modules:
       - nano
       - nano-default-editor
 
-  - type: script
-    scripts:
-      - install-twingate.sh
-
   - type: rpm-ostree
+    repo:
+      - https://repo.fury.io/twingate/
     install: 
-      - twingate-latest
-
-  - type: script
-    scripts:
-      - cleanup-install-twingate.sh
+      - twingate
 
   - type: default-flatpaks
     notify: true
