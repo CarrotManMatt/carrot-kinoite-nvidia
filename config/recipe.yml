@@ -23,9 +23,11 @@ modules:
       - nano
       - nano-default-editor
 
+  - type: script
+    scripts:
+      - install-twingate.sh
+
   - type: rpm-ostree
-    repos:
-      - https://packages.twingate.com/rpm/
     install: 
       - twingate-latest
 
@@ -56,5 +58,6 @@ modules:
         - org.videolan.VLC
         - us.zoom.Zoom
         - io.github.mimbrero.WhatsAppDesktop
+        - org.mixxx.Mixxx
 
   - type: signing
