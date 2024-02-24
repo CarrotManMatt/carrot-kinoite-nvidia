@@ -25,7 +25,11 @@ modules:
 
   - type: script
     scripts: 
-      - install-twingate.sh
+      - add-twingate-package-repo.sh
+
+  - type: rpm-ostree
+    install:
+      - twingate-latest
 
   - type: default-flatpaks
     notify: true
