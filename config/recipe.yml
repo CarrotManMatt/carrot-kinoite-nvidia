@@ -31,6 +31,10 @@ modules:
     install: 
       - twingate-latest
 
+  - type: script
+    scripts:
+      - cleanup-install-twingate.sh
+
   - type: default-flatpaks
     notify: true
     system:
