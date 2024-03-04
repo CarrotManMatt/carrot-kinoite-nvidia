@@ -16,7 +16,7 @@ modules:
   - type: rpm-ostree
     install:
       - micro
-      - dnf-command(config-manager)
+      - fastfetch
     remove:
       - firefox
       - firefox-langpacks
@@ -29,7 +29,7 @@ modules:
 
   - type: rpm-ostree
     install:
-      - twingate-latest
+      - twingate
 
   - type: default-flatpaks
     notify: true
