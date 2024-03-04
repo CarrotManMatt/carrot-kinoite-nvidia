@@ -17,6 +17,7 @@ modules:
     install:
       - micro
       - fastfetch
+      - libpam-pwdfile
     remove:
       - firefox
       - firefox-langpacks
