@@ -22,6 +22,10 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
+      - vim
+      - toolbx
+      - apr
+      - apr-utils
 
   - type: script
     scripts: 
@@ -45,6 +49,7 @@ modules:
         - com.getpostman.Postman
         - com.jetbrains.IntelliJ-IDEA-Ultimate
         - com.jetbrains.GoLand
+        - org.nickvision.tubeconverter
         - org.audacityteam.Audacity
         - org.gimp.GIMP
         - org.blender.Blender
