@@ -25,7 +25,7 @@ modules:
       - vim
       - toolbx
       - apr
-      - apr-utils
+      - apr-util
 
   - type: script
     scripts: 
