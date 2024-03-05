@@ -24,7 +24,6 @@ modules:
       - nano-default-editor
       - vim
       - toolbox
-      - apr
 
   # - type: rpm-ostree
   #   repos:
