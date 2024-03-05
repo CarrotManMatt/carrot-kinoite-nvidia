@@ -25,7 +25,6 @@ modules:
       - vim
       - toolbox
       - apr
-      - apr-util
 
   # - type: rpm-ostree
   #   repos:
