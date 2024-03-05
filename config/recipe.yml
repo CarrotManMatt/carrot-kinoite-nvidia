@@ -23,7 +23,6 @@ modules:
       - nano
       - nano-default-editor
       - vim
-      - toolbox
 
   # - type: rpm-ostree
   #   repos:
