@@ -17,7 +17,6 @@ modules:
     install:
       - micro
       - fastfetch
-      - libpam-pwdfile
     remove:
       - firefox
       - firefox-langpacks
@@ -27,6 +26,12 @@ modules:
       - toolbox
       - apr
       - apr-util
+
+  # - type: rpm-ostree
+  #   repos:
+  #     - 
+  #   install:
+  #     - libpam-pwdfile
 
   - type: script
     scripts: 
