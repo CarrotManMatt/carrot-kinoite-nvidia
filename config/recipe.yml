@@ -29,11 +29,7 @@ modules:
 
   - type: script
     scripts:
-      - download-pam-pwdfile.sh
-
-  - type: rpm-ostree
-    install:
-      - ./pam_pwdfile-1.0-3.3.x86_64.rpm
+      - install-package-pam-pwdfile.sh
 
   - type: script
     scripts: 
