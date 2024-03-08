@@ -23,7 +23,6 @@ modules:
       - nano
       - nano-default-editor
       - vim
-      - vim-tiny
       # - apr
       # - apr-util
       # - toolbox
