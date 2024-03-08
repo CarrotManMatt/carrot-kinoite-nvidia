@@ -22,7 +22,6 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
-      - vim-default-editor
       - vim
       - vim-tiny
       # - apr
