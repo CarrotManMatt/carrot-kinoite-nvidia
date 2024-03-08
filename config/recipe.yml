@@ -22,6 +22,8 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
+      - apr-util-openssl
+      - apr-util-db
       - apr
       - apr-util
       - toolbox
