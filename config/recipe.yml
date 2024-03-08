@@ -22,10 +22,10 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
-      - vim
-      # - apr
-      # - apr-util
-      # - toolbox
+      # - vim
+      - apr
+      - apr-util
+      - toolbox
 
   # - type: rpm-ostree
   #   repos:
