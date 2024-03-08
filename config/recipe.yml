@@ -23,7 +23,7 @@ modules:
       - nano
       - nano-default-editor
       - apr-util-openssl
-      - apr-util-db
+      - apr-util-bdb
       - apr
       - apr-util
       - toolbox
