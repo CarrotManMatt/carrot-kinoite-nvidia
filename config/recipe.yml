@@ -24,6 +24,7 @@ modules:
       - nano-default-editor
       # - vim
       - apr
+      - libapr
       - apr-util
       - toolbox
 
