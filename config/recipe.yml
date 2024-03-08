@@ -22,9 +22,8 @@ modules:
       - firefox-langpacks
       - nano
       - nano-default-editor
-      # - vim
-      # - apr
-      # - apr-util
+      - apr
+      - apr-util
       - toolbox
 
   - type: script
