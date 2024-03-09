@@ -39,8 +39,6 @@ modules:
   - type: rpm-ostree
     install:
       - twingate
-    remove:
-      - vim-default-editor
 
   - type: default-flatpaks
     notify: true
@@ -71,5 +69,10 @@ modules:
         - us.zoom.Zoom
         - io.github.mimbrero.WhatsAppDesktop
         - org.mixxx.Mixxx
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
 
   - type: signing
