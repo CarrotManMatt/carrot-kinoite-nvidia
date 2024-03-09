@@ -50,6 +50,7 @@ modules:
         - com.discordapp.Discord
         - org.linuxshowplayer.LinuxShowPlayer
         - com.valvesoftware.Steam
+        - com.heroicgameslauncher.hgl
         - com.jetbrains.PyCharm-Professional
         - com.getpostman.Postman
         - com.jetbrains.IntelliJ-IDEA-Ultimate
