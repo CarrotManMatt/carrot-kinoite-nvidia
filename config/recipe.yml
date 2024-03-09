@@ -32,9 +32,6 @@ modules:
   - type: script
     scripts:
       - install-package-pam-pwdfile.sh
-
-  - type: script
-    scripts: 
       - add-twingate-package-repo.sh
 
   - type: rpm-ostree
