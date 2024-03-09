@@ -63,7 +63,6 @@ modules:
         - com.nextcloud.desktopclient.nextcloud
         - com.bitwarden.desktop
         - org.openstreetmap.josm
-        - md.obsidian.Obsidian
         - com.stremio.Stremio
         - org.videolan.VLC
         - us.zoom.Zoom
