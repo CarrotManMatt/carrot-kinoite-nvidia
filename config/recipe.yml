@@ -68,7 +68,7 @@ modules:
         - org.videolan.VLC
         - us.zoom.Zoom
         - io.github.mimbrero.WhatsAppDesktop
-        - org.mixxx.Mixxx
+        - com.usebottles.bottles
 
   - type: fonts
     fonts:
