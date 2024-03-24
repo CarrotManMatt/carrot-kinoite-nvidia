@@ -11,4 +11,7 @@ The details of what has been customised from the base image are described in lin
 
 == ISO
 
-To build an ISO of this image, follow https://blue-build.org/learn/universal-blue#fresh-install-from-an-iso[the documentation on ``+blue-build.org+``'s website]
+To build an ISO of this image, use the following command:
+
+[source,console]
+$ bash <(curl -s https://raw.githubusercontent.com/CarrotManMatt/carrot-kinoite-nvidia/main/generate-offline-iso.sh)
