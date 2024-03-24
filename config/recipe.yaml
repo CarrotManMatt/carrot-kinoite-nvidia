@@ -10,7 +10,7 @@ modules:
   #   files:
   #     - usr: /usr
   #         # copies config/files/usr into your image's /usr.
-  #         # put configuration files you want in /etc/ on a booted system 
+  #         # put configuration files you want in /etc/ on a booted system
   #         # in /usr/etc/ in the image. read more in files module reference.
 
   - type: rpm-ostree
@@ -19,6 +19,7 @@ modules:
       - fastfetch
       - asciidoctor
       - python3.12
+      - langpacks-en
     remove:
       - firefox
       - firefox-langpacks
@@ -29,6 +30,9 @@ modules:
       - apr
       - apr-util
       - toolbox
+      - gnome-initial-setup
+      - htop
+      - nvtop
 
   - type: script
     scripts:
@@ -43,6 +47,9 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-system
+      repo-title: "Flathub (System)"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       remove:
         - org.gnome.eog
       install:
@@ -69,6 +76,10 @@ modules:
         - us.zoom.Zoom
         - io.github.mimbrero.WhatsAppDesktop
         - com.usebottles.bottles
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-user
+      repo-title: "Flathub"
 
   - type: fonts
     fonts:
