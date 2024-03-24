@@ -30,7 +30,6 @@ modules:
       - apr
       - apr-util
       - toolbox
-      - gnome-initial-setup
       - htop
       - nvtop
 
