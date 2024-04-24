@@ -12,7 +12,7 @@ IMAGE_NAME=carrot-kinoite-nvidia
 IMAGE_TAG=latest
 IMAGE_VARIANT=Kinoite
 ARCH=x86_64
-INSTALLER_VERSION=39
+INSTALLER_VERSION=40
 WEB_UI=false
 
 sudo docker run --rm --privileged --volume .:/isogenerator/output \
