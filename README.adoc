@@ -6,7 +6,7 @@ CarrotManMatt's Personal Custom Linux Image
 
 == Customisation
 
-This imagee is based on https://universal-blue.org[Universal Blue]'s https://github.com/ublue-os/nvidia/pkgs/container/kinoite-nvidia[`+kinoite-nvidia+` base image].
+This image is based on https://universal-blue.org[Universal Blue]'s https://github.com/ublue-os/nvidia/pkgs/container/kinoite-nvidia[`+kinoite-nvidia+` base image].
 The details of what has been customised from the base image are described in link:config/recipe.yml[the `+recipe.yml+` file].
 
 == ISO
