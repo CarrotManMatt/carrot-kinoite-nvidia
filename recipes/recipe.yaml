@@ -35,6 +35,11 @@ modules:
           - toolbox
           - htop
           - nvtop
+          - tmux
+          - google-noto-sans-sundanese-fonts
+          - google-noto-sans-javanese-fonts
+          - google-noto-sans-cjk-fonts
+          - google-noto-sans-balinese-fonts
 
     - type: rpm-ostree
       repos:
