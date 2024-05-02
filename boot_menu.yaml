@@ -1,5 +1,0 @@
-ublue_variants:
-    - label: carrotmanmatt/carrot-kinoite-nvidia
-      ks: /kickstart/ublue-os.ks
-      flavors:
-          - label: carrot-kinoite-nvidia

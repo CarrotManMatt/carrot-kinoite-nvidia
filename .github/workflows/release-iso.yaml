@@ -43,9 +43,6 @@ jobs:
                   image_tag: latest
                   variant: 'Kinoite'
                   iso_name: ${{ github.event.repository.name }}_${{ env.TIMESTAMP }}.iso
-                  installer-repo: releases
-                  installer-major-version: 40
-                  boot-menu-path: boot_menu.yaml
                   flatpak_remote_name: "flathub-system"
                   flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
 
