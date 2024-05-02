@@ -1,65 +1,62 @@
 on:
-  schedule:
-    - cron: "0 0 1 * *" # Build & upload ISO every month
-  push:
-    paths:
-      - "boot_menu.yaml"
-      - ".github/workflows/release-iso.yaml"
-  workflow_dispatch:
+    schedule:
+        - cron: "0 0 1 * *" # Build & upload ISO every month
+    push:
+        paths:
+            - "boot_menu.yaml"
+            - ".github/workflows/release-iso.yaml"
+    workflow_dispatch:
 
 env:
-  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }
+    IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+    cancel-in-progress: true
 
 name: release-iso
 jobs:
-  release-iso:
-    name: Generate and Release ISOs
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    release-iso:
+        name: Generate and Release ISOs
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
 
-    strategy:
-      fail-fast: false
+        steps:
+            - name: Fetch current date
+              shell: bash
+              run: |
+                  TIMESTAMP="$(date +%d-%m-%Y)"
+                  echo "TIMESTAMP=${TIMESTAMP}" >> $GITHUB_ENV
 
-    steps:
-      - name: Fetch current date
-        shell: bash
-        run: |
-          TIMESTAMP="$(date +%d-%m-%Y)"
-          echo "TIMESTAMP=${TIMESTAMP}" >> $GITHUB_ENV
+            - name: Checkout Repo
+              uses: actions/checkout@v4
 
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+            - name: Generate ISO
+              uses: jasonn3/build-container-installer@v1.2.0
+              id: build
+              with:
+                  arch: x86_64
+                  version: 40
+                  image_repo: ${{ env.IMAGE_REGISTRY }}
+                  image_name: ${{ github.event.repository.name }}
+                  image_tag: latest
+                  variant: 'Kinoite'
+                  iso_name: ${{ github.event.repository.name }}_${{ env.TIMESTAMP }}.iso
+                  installer-repo: releases
+                  installer-major-version: 40
+                  boot-menu-path: boot_menu.yaml
+                  flatpak_remote_name: "flathub-system"
+                  flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
 
-      - name: Generate ISO  
-        uses: jasonn3/build-container-installer@v1.2.0
-        id: build
-        with:
-          arch: x86_64
-          version: 40
-          image_repo: ${{ env.IMAGE_REGISTRY }}
-          image_name: ${{ github.event.repository.name }}
-          image_tag: latest
-          variant: 'Kinoite'
-          iso_name: ${{ github.event.repository.name }}_${{ env.TIMESTAMP }}.iso
-          installer-repo: releases
-          installer-major-version: 40
-          boot-menu-path: boot_menu.yaml
-          flatpak_remote_name: "flathub-system"
-          flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
-
-      - name: Upload ISO as artifact
-        id: upload
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ steps.build.outputs.iso_name }}
-          path: |
-            ${{ steps.build.outputs.iso_path }}
-            ${{ steps.build.outputs.iso_path }}-CHECKSUM
-          if-no-files-found: error
-          retention-days: 0
-          compression-level: 0
+            - name: Upload ISO as artifact
+              id: upload
+              uses: actions/upload-artifact@v4
+              with:
+                  name: ${{ steps.build.outputs.iso_name }}
+                  path: |
+                      ${{ steps.build.outputs.iso_path }}
+                      ${{ steps.build.outputs.iso_path }}-CHECKSUM
+                  if-no-files-found: error
+                  retention-days: 0
+                  compression-level: 0
