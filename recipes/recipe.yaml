@@ -21,6 +21,7 @@ modules:
           - python3.12
           - python3-pip
           - langpacks-en
+          - nvidia-container-toolkit
       remove:
           - firefox
           - firefox-langpacks
