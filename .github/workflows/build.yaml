@@ -6,6 +6,7 @@ on:
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
+      - "**.adoc"
 
   pull_request:
   workflow_dispatch: # allow manually triggering builds
@@ -27,7 +28,7 @@ jobs:
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.3
+        uses: blue-build/github-action@v1.5
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
