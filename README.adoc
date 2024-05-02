@@ -1,17 +1,15 @@
 = carrot-kinoite-nvidia
 Matthew Norton <matt@carrotmanmatt.com>
-v1.0, 23/03/2024
+v1.1, 23/03/2024
 
 CarrotManMatt's Personal Custom Linux Image
 
 == Customisation
 
 This image is based on https://universal-blue.org[Universal Blue]'s https://github.com/ublue-os/nvidia/pkgs/container/kinoite-nvidia[`+kinoite-nvidia+` base image].
-The details of what has been customised from the base image are described in link:config/recipe.yml[the `+recipe.yml+` file].
+It uses https://blue-build.org[BlueBuild] to apply the customisations on top of this base.
+The details of what has been customised from the base image are described in link:recipes/recipe.yaml[the `+recipe.yaml+` file].
 
 == ISO
 
-To build an ISO of this image, use the following command:
-
-[source,console]
-$ bash <(curl -s https://raw.githubusercontent.com/CarrotManMatt/carrot-kinoite-nvidia/main/generate-offline-iso.sh)
+An ISO of this image is available under the artifacts of https://github.com/CarrotManMatt/carrot-kinoite-nvidia/actions/workflows/release-iso.yaml[the latest completed GitHub Actions run].
