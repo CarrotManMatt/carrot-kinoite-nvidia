@@ -33,7 +33,7 @@ jobs:
               id: registry_case
               uses: ASzc/change-string-case-action@v6
               with:
-                  string: ${{ github.event.repository.name }}
+                  string: ${{ env.IMAGE_REGISTRY }}
 
             - name: Checkout Repo
               uses: actions/checkout@v4
@@ -44,11 +44,11 @@ jobs:
               with:
                   arch: x86_64
                   version: 40
-                  image_repo: ${{ env.IMAGE_REGISTRY }}
-                  image_name: ${{ steps.registry_case.outputs.lowercase }}
+                  image_repo: ${{ steps.registry_case.outputs.lowercase }}
+                  image_name: ${{ github.event.repository.name }}
                   image_tag: latest
                   variant: 'Kinoite'
-                  iso_name: ${{ steps.registry_case.outputs.lowercase }}_${{ env.TIMESTAMP }}.iso
+                  iso_name: ${{ github.event.repository.name }}_${{ env.TIMESTAMP }}.iso
                   flatpak_remote_name: "flathub-system"
                   flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
 
