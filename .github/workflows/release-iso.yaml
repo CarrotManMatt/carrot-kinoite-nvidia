@@ -29,6 +29,12 @@ jobs:
                   TIMESTAMP="$(date +%d-%m-%Y)"
                   echo "TIMESTAMP=${TIMESTAMP}" >> $GITHUB_ENV
 
+            - name: Lowercase Registry Name
+              id: registry_case
+              uses: ASzc/change-string-case-action@v6
+              with:
+                  string: ${{ github.event.repository.name }}
+
             - name: Checkout Repo
               uses: actions/checkout@v4
 
@@ -39,10 +45,10 @@ jobs:
                   arch: x86_64
                   version: 40
                   image_repo: ${{ env.IMAGE_REGISTRY }}
-                  image_name: ${{ github.event.repository.name }}
+                  image_name: ${{ steps.registry_case.outputs.lowercase }}
                   image_tag: latest
                   variant: 'Kinoite'
-                  iso_name: ${{ github.event.repository.name }}_${{ env.TIMESTAMP }}.iso
+                  iso_name: ${{ steps.registry_case.outputs.lowercase }}_${{ env.TIMESTAMP }}.iso
                   flatpak_remote_name: "flathub-system"
                   flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
 
