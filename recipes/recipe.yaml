@@ -22,6 +22,7 @@ modules:
           - python3-pip
           - langpacks-en
           - nvidia-container-toolkit
+          - nu
       remove:
           - firefox
           - firefox-langpacks
