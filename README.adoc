@@ -12,4 +12,4 @@ The details of what has been customised from the base image are described in lin
 
 == ISO
 
-An ISO of this image is available under the artifacts of https://github.com/CarrotManMatt/carrot-kinoite-nvidia/actions/workflows/release-iso.yaml[the latest completed GitHub Actions run].
+An ISO of this image is available under the artifacts of https://nightly.link/CarrotManMatt/carrot-kinoite-nvidia/workflows/release-iso.yaml/main[the latest completed GitHub Actions run].
