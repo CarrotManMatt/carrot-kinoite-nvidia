@@ -97,6 +97,9 @@ modules:
         repo-name: flathub-user
         repo-title: "Flathub"
 
+    - type: chezmoi
+      repository: "--ssh CarrotManMatt"
+
     - type: fonts
       fonts:
           nerd-fonts:
