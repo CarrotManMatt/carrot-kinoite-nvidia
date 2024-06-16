@@ -89,7 +89,7 @@ modules:
             - us.zoom.Zoom
             - io.github.mimbrero.WhatsAppDesktop
             - com.usebottles.bottles
-            - com.github.tchx84.Flatseal
+            - com.github.tchx84.Flatseal  # Might be unnecessary if KDE flatpak permissions settings are suitable
             # - io.github.dvlv.boxbuddyrs
             # - io.github.flattool.Warehouse
       user:
