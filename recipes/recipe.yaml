@@ -59,10 +59,10 @@ modules:
 
     - type: default-flatpaks
       notify: true
-      system:
+      user:
           repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-          repo-name: flathub-system
-          repo-title: "Flathub (System)"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+          repo-name: flathub-user
+          repo-title: "Flathub"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
           remove:
               - org.gnome.eog
           install:
@@ -92,10 +92,12 @@ modules:
             - com.github.tchx84.Flatseal  # Might be unnecessary if KDE flatpak permissions settings are suitable
             # - io.github.dvlv.boxbuddyrs
             # - io.github.flattool.Warehouse
-      user:
-        repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-        repo-name: flathub-user
-        repo-title: "Flathub"
+      system:
+          repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          repo-name: flathub-system
+          repo-title: "Flathub (System)"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+          remove:
+              - org.gnome.eog
 
     - type: chezmoi
       repository: "--ssh CarrotManMatt"
