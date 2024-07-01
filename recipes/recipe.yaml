@@ -40,6 +40,8 @@ modules:
           - google-noto-sans-javanese-fonts
           - google-noto-sans-cjk-fonts
           - google-noto-sans-balinese-fonts
+          - kate
+          - kwrite
 
     - type: rpm-ostree
       repos:
@@ -65,6 +67,7 @@ modules:
           repo-title: "Flathub"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
           remove:
               - org.gnome.eog
+              - com.github.tchx84.Flatseat
           install:
             - com.google.Chrome
             - com.discordapp.Discord
@@ -89,9 +92,7 @@ modules:
             - us.zoom.Zoom
             - io.github.mimbrero.WhatsAppDesktop
             - com.usebottles.bottles
-            - com.github.tchx84.Flatseal  # Might be unnecessary if KDE flatpak permissions settings are suitable
             # - io.github.dvlv.boxbuddyrs
-            # - io.github.flattool.Warehouse
       system:
           repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
           repo-name: flathub-system
