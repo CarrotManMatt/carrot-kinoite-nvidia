@@ -42,6 +42,7 @@ modules:
           - google-noto-sans-balinese-fonts
           - kate
           - kwrite
+          - kate-krunner-plugin
 
     - type: rpm-ostree
       repos:
