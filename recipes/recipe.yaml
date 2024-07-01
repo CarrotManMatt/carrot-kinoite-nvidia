@@ -43,6 +43,7 @@ modules:
           - kate
           - kwrite
           - kate-krunner-plugin
+          - kate-plugins
 
     - type: rpm-ostree
       repos:
