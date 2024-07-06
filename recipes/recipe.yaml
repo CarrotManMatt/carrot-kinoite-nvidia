@@ -13,6 +13,10 @@ modules:
     #         # put configuration files you want in /etc/ on a booted system
     #         # in /usr/etc/ in the image. read more in files module reference.
 
+    - type: akmods
+      install:
+          - openrgb
+
     - type: rpm-ostree
       install:
           - micro
@@ -54,7 +58,6 @@ modules:
           - gnome-shell-extension-launch-new-instance
           - gnome-shell-extension-places-menu
           - gnome-shell-extension-window-list
-          - gnome-classic-session
           - gnome-classic-session-xsession
           - gnome-tweaks
 
