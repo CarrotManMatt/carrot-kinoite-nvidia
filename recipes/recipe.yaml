@@ -59,6 +59,7 @@ modules:
     - type: script
       scripts:
           - install-poetry.sh
+          - bootc-update-bootloader.sh
           - add-twingate-package-repo.sh
 
     - type: rpm-ostree
