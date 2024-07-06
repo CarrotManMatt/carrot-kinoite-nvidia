@@ -49,17 +49,6 @@ modules:
           - kwrite
           - kate-krunner-plugin
           - kate-plugins
-          - gnome-software-rpm-ostree
-          - gnome-tour
-          - gnome-initial-setup
-          - gnome-system-monitor
-          - gnome-shell-extension-apps-menu
-          - gnome-shell-extension-background-logo
-          - gnome-shell-extension-launch-new-instance
-          - gnome-shell-extension-places-menu
-          - gnome-shell-extension-window-list
-          - gnome-classic-session-xsession
-          - gnome-tweaks
 
     - type: rpm-ostree
       repos:
