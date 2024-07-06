@@ -53,7 +53,6 @@ modules:
 
     - type: script
       scripts:
-          - install-package-pam-pwdfile.sh
           - install-poetry.sh
           - add-twingate-package-repo.sh
 
@@ -94,7 +93,7 @@ modules:
             - us.zoom.Zoom
             - io.github.mimbrero.WhatsAppDesktop
             - com.usebottles.bottles
-            # - io.github.dvlv.boxbuddyrs
+            - io.github.dvlv.boxbuddyrs
       system:
           repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
           repo-name: flathub-system
