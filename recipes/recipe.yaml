@@ -107,6 +107,8 @@ modules:
           repo-title: "Flathub (System)"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
           remove:
               - org.gnome.eog
+              - io.github.flattool.Warehouse
+              - com.github.tchx84.Flatseal
 
     - type: chezmoi
       repository: "--ssh CarrotManMatt"
