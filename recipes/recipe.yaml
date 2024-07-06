@@ -28,6 +28,7 @@ modules:
           - nvidia-container-toolkit
           - nu
           - bootc
+          - libva-nvidia-driver
       remove:
           - firefox
           - firefox-langpacks
