@@ -60,6 +60,7 @@ modules:
       scripts:
           - install-poetry.sh
           - bootc-update-bootloader.sh
+          - hide-default-kde-apps.sh
           - add-twingate-package-repo.sh
 
     - type: rpm-ostree
