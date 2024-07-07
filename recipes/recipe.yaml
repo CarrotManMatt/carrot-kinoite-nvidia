@@ -53,6 +53,12 @@ modules:
 
     - type: rpm-ostree
       repos:
+          - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-%OS_VERSION%.noarch.rpm
+      install:
+          - nvidia-vaapi-driver
+
+    - type: rpm-ostree
+      repos:
           - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       install:
           - starship
