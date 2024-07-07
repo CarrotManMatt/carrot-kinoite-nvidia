@@ -83,7 +83,7 @@ modules:
           repo-title: "Flathub"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
           remove:
               - org.gnome.eog
-              - com.github.tchx84.Flatseat
+              - com.github.tchx84.Flatseal
           install:
             - com.google.Chrome
             - com.discordapp.Discord
