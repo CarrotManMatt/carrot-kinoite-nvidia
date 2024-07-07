@@ -68,6 +68,7 @@ modules:
           - install-poetry.sh
           - bootc-update-bootloader.sh
           - hide-default-kde-apps.sh
+          - disable-secondary-screen-in-sddm.sh
           - add-twingate-package-repo.sh
 
     - type: rpm-ostree
