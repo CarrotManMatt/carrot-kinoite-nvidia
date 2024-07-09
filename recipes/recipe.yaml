@@ -6,12 +6,12 @@ base-image: ghcr.io/ublue-os/kinoite-nvidia
 image-version: latest
 
 modules:
-    # - type: files
-    #   files:
-    #     - usr: /usr
-    #         # copies config/files/usr into your image's /usr.
-    #         # put configuration files you want in /etc/ on a booted system
-    #         # in /usr/etc/ in the image. read more in files module reference.
+    - type: files
+      files:
+        - usr: /usr
+          # copies config/files/usr into your image's /usr.
+          # put configuration files you want in /etc/ on a booted system
+          # in /usr/etc/ in the image. read more in files module reference.
 
     - type: akmods
       install:
@@ -68,7 +68,6 @@ modules:
           - install-poetry.sh
           - bootc-update-bootloader.sh
           - hide-default-kde-apps.sh
-          - disable-secondary-screen-in-sddm.sh
           - add-twingate-package-repo.sh
 
     - type: rpm-ostree
@@ -83,32 +82,33 @@ modules:
           repo-title: "Flathub"  # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
           remove:
               - org.gnome.eog
+              - io.github.flattool.Warehouse
               - com.github.tchx84.Flatseal
           install:
-            - com.google.Chrome
-            - com.discordapp.Discord
-            - org.linuxshowplayer.LinuxShowPlayer
-            - com.valvesoftware.Steam
-            - com.heroicgameslauncher.hgl
-            - com.jetbrains.PyCharm-Professional
-            - com.getpostman.Postman
-            - com.jetbrains.IntelliJ-IDEA-Ultimate
-            - com.jetbrains.GoLand
-            - org.nickvision.tubeconverter
-            - org.audacityteam.Audacity
-            - org.gimp.GIMP
-            - org.blender.Blender
-            - com.obsproject.Studio
-            - com.spotify.Client
-            - com.nextcloud.desktopclient.nextcloud
-            - com.bitwarden.desktop
-            - org.openstreetmap.josm
-            - com.stremio.Stremio
-            - org.videolan.VLC
-            - us.zoom.Zoom
-            - io.github.mimbrero.WhatsAppDesktop
-            - com.usebottles.bottles
-            - io.github.dvlv.boxbuddyrs
+              - com.google.Chrome
+              - com.discordapp.Discord
+              - org.linuxshowplayer.LinuxShowPlayer
+              - com.valvesoftware.Steam
+              - com.heroicgameslauncher.hgl
+              - com.jetbrains.PyCharm-Professional
+              - com.getpostman.Postman
+              - com.jetbrains.IntelliJ-IDEA-Ultimate
+              - com.jetbrains.GoLand
+              - org.nickvision.tubeconverter
+              - org.audacityteam.Audacity
+              - org.gimp.GIMP
+              - org.blender.Blender
+              - com.obsproject.Studio
+              - com.spotify.Client
+              - com.nextcloud.desktopclient.nextcloud
+              - com.bitwarden.desktop
+              - org.openstreetmap.josm
+              - com.stremio.Stremio
+              - org.videolan.VLC
+              - us.zoom.Zoom
+              - io.github.mimbrero.WhatsAppDesktop
+              - com.usebottles.bottles
+              - io.github.dvlv.boxbuddyrs
       system:
           repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
           repo-name: flathub-system
@@ -117,6 +117,30 @@ modules:
               - org.gnome.eog
               - io.github.flattool.Warehouse
               - com.github.tchx84.Flatseal
+              - com.google.Chrome
+              - com.discordapp.Discord
+              - org.linuxshowplayer.LinuxShowPlayer
+              - com.valvesoftware.Steam
+              - com.heroicgameslauncher.hgl
+              - com.jetbrains.PyCharm-Professional
+              - com.getpostman.Postman
+              - com.jetbrains.IntelliJ-IDEA-Ultimate
+              - com.jetbrains.GoLand
+              - org.nickvision.tubeconverter
+              - org.audacityteam.Audacity
+              - org.gimp.GIMP
+              - org.blender.Blender
+              - com.obsproject.Studio
+              - com.spotify.Client
+              - com.nextcloud.desktopclient.nextcloud
+              - com.bitwarden.desktop
+              - org.openstreetmap.josm
+              - com.stremio.Stremio
+              - org.videolan.VLC
+              - us.zoom.Zoom
+              - io.github.mimbrero.WhatsAppDesktop
+              - com.usebottles.bottles
+              - io.github.dvlv.boxbuddyrs
 
     - type: chezmoi
       repository: "--ssh CarrotManMatt"
