@@ -30,6 +30,7 @@ modules:
           - nu
           - bootc
           - libva-nvidia-driver
+          - ksshaskpass
       remove:
           - firefox
           - firefox-langpacks
