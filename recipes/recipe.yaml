@@ -19,6 +19,8 @@ modules:
 
     - type: rpm-ostree
       install:
+          - nss-mdns
+          - avahi
           - micro
           - fastfetch
           - asciidoctor
