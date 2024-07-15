@@ -31,7 +31,6 @@ modules:
       remove:
           - firefox
           - firefox-langpacks
-          - asciidoctor
           - nano
           - nano-default-editor
           - apr-util-openssl
