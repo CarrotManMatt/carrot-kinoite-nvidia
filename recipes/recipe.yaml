@@ -32,8 +32,6 @@ modules:
           - libva-nvidia-driver
           - ksshaskpass
       remove:
-          - nss-mdns
-          - avahi
           - firefox
           - firefox-langpacks
           - nano
