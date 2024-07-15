@@ -21,9 +21,6 @@ modules:
       install:
           - micro
           - fastfetch
-          - asciidoctor
-          - python3.12
-          - python3-pip
           - langpacks-en
           - nvidia-container-toolkit
           - nextcloud-client-dolphin
@@ -34,6 +31,7 @@ modules:
       remove:
           - firefox
           - firefox-langpacks
+          - asciidoctor
           - nano
           - nano-default-editor
           - apr-util-openssl
@@ -85,16 +83,16 @@ modules:
               - org.gnome.eog
               - io.github.flattool.Warehouse
               - com.github.tchx84.Flatseal
+              - com.jetbrains.IntelliJ-IDEA-Ultimate
+              - com.jetbrains.PyCharm-Professional
+              - com.jetbrains.GoLand
           install:
               - com.google.Chrome
               - com.discordapp.Discord
               - org.linuxshowplayer.LinuxShowPlayer
               - com.valvesoftware.Steam
               - com.heroicgameslauncher.hgl
-              - com.jetbrains.PyCharm-Professional
               - com.getpostman.Postman
-              - com.jetbrains.IntelliJ-IDEA-Ultimate
-              - com.jetbrains.GoLand
               - org.nickvision.tubeconverter
               - org.audacityteam.Audacity
               - org.gimp.GIMP
