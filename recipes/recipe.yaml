@@ -19,8 +19,6 @@ modules:
 
     - type: rpm-ostree
       install:
-          - nss-mdns
-          - avahi
           - micro
           - fastfetch
           - asciidoctor
@@ -34,6 +32,8 @@ modules:
           - libva-nvidia-driver
           - ksshaskpass
       remove:
+          - nss-mdns
+          - avahi
           - firefox
           - firefox-langpacks
           - nano
