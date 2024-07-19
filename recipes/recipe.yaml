@@ -64,8 +64,6 @@ modules:
 
     - type: script
       scripts:
-          - bootc-update-bootloader.sh
-          - hide-default-kde-apps.sh
           - add-twingate-package-repo.sh
 
     - type: rpm-ostree
@@ -148,5 +146,10 @@ modules:
       fonts:
           nerd-fonts:
               - FiraCode
+
+    - type: script
+      scripts:
+          - hide-default-kde-apps.sh
+          - bootc-update-bootloader.sh
 
     - type: signing
