@@ -150,6 +150,5 @@ modules:
     - type: script
       scripts:
           - hide-default-kde-apps.sh
-          - bootc-update-bootloader.sh
 
     - type: signing
