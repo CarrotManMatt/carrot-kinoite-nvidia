@@ -99,7 +99,6 @@ modules:
               - com.nextcloud.desktopclient.nextcloud
               - com.bitwarden.desktop
               - org.openstreetmap.josm
-              - com.stremio.Stremio
               - org.videolan.VLC
               - us.zoom.Zoom
               - io.github.mimbrero.WhatsAppDesktop
