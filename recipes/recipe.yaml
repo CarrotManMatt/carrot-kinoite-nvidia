@@ -8,10 +8,11 @@ image-version: latest
 modules:
     - type: files
       files:
-        - usr: /usr
-          # copies config/files/usr into your image's /usr.
-          # put configuration files you want in /etc/ on a booted system
-          # in /usr/etc/ in the image. read more in files module reference.
+        - source: system
+          destination: /
+          # Copies files/system/** into your image's /**.
+          # Put configuration files you want in /etc/ on a booted system in files/system/usr/etc/ in the image.
+          # Read more in files module reference.
 
     - type: akmods
       install:
