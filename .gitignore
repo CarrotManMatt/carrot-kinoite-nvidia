@@ -4,7 +4,7 @@ cosign.key
 cosign.private
 /Containerfile
 
-### Python
+### Local Cache / Environment Files
 
 # Distribution / packaging
 build/
@@ -15,27 +15,15 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 .installed.cfg
 MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+target/
 
 # Translations
 *.mo
 *.pot
-
-# PyBuilder
-target/
-
-# pdm
-.pdm.toml
-
-### Local Cache / Environment Files
 
 # Logs
 logs
@@ -74,7 +62,6 @@ venv.bak/
 [Ll]ib
 [Ll]ib64
 [Ll]ocal
-[Ss]cripts
 
 # Local Files/Databases
 local/
