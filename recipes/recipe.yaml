@@ -14,10 +14,6 @@ modules:
           # Put configuration files you want in /etc/ on a booted system in files/system/usr/etc/ in the image.
           # Read more in files module reference.
 
-    - type: akmods
-      install:
-          - openrgb
-
     - type: rpm-ostree
       install:
           - micro
