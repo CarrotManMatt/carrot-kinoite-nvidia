@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-echo 'Hidden=true' >> /usr/share/applications/kate.desktop
-echo 'Hidden=true' >> /usr/share/applications/kwrite.desktop
+echo '[Desktop Entry]\nHidden=true' > /usr/share/applications/kate.desktop
+echo '[Desktop Entry]\nHidden=true' > /usr/share/applications/kwrite.desktop
