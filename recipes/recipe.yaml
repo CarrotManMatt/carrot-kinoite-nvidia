@@ -3,7 +3,7 @@ description: CarrotManMatt's personal custom linux image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-image-version: latest
+image-version: 40
 
 modules:
     - type: files
