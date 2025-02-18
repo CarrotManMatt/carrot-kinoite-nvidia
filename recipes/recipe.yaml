@@ -79,7 +79,6 @@ modules:
               - com.github.tchx84.Flatseal
               - com.jetbrains.IntelliJ-IDEA-Ultimate
               - com.jetbrains.PyCharm-Professional
-              - io.github.mimbrero.WhatsAppDesktop
               - com.jetbrains.GoLand
           install:
               - com.google.Chrome
@@ -133,7 +132,6 @@ modules:
               - com.stremio.Stremio
               - org.videolan.VLC
               - us.zoom.Zoom
-              - io.github.mimbrero.WhatsAppDesktop
               - com.usebottles.bottles
               - io.github.dvlv.boxbuddyrs
 
