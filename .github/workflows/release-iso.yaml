@@ -1,6 +1,4 @@
 on:
-    schedule:
-        - cron: "0 0 1 * *" # Build & upload ISO every month
     push:
         paths:
             - "boot_menu.yaml"
