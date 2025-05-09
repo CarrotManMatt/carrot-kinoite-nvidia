@@ -42,7 +42,6 @@ modules:
           - google-noto-sans-javanese-fonts
           - google-noto-sans-cjk-fonts
           - google-noto-sans-balinese-fonts
-          - kate
           - kwrite
           - kate-krunner-plugin
           - kate-plugins
