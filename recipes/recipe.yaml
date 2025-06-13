@@ -25,6 +25,7 @@ modules:
           - bootc
           - libva-nvidia-driver
           - ksshaskpass
+          - uv
       remove:
           - firefox
           - firefox-langpacks
@@ -43,6 +44,7 @@ modules:
           - google-noto-sans-cjk-fonts
           - google-noto-sans-balinese-fonts
           - kwrite
+          - kate
           - kate-krunner-plugin
           - kate-plugins
 
