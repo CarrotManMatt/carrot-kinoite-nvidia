@@ -25,7 +25,6 @@ modules:
           - bootc
           - libva-nvidia-driver
           - ksshaskpass
-          - uv
       remove:
           - firefox
           - firefox-langpacks
@@ -143,6 +142,8 @@ modules:
       fonts:
           nerd-fonts:
               - FiraCode
+          google-fonts:
+              - Noto Color Emoji
 
     - type: script
       scripts:
