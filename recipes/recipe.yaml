@@ -25,6 +25,7 @@ modules:
           - bootc
           - libva-nvidia-driver
           - ksshaskpass
+          - uv
       remove:
           - firefox
           - firefox-langpacks
