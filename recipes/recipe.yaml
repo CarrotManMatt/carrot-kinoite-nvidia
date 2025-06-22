@@ -14,51 +14,48 @@ modules:
           # Put configuration files you want in /etc/ on a booted system in files/system/usr/etc/ in the image.
           # Read more in files module reference.
 
-    - type: rpm-ostree
+    - type: dnf
+      repos:
+          cleanup: true
+          copr:
+              - atim/starship
+          nonfree: rpmfusion
       install:
-          - micro
-          - fastfetch
-          - langpacks-en
-          - nvidia-container-toolkit
-          - nextcloud-client-dolphin
-          - nu
-          - bootc
-          - libva-nvidia-driver
-          - ksshaskpass
-          - uv
+          packages:
+              - micro
+              - fastfetch
+              - langpacks-en
+              - nvidia-container-toolkit
+              - nextcloud-client-dolphin
+              - nu
+              - bootc
+              - libva-nvidia-driver
+              - ksshaskpass
+              - uv
+              - starship
+              - nvidia-vaapi-driver
       remove:
-          - firefox
-          - firefox-langpacks
-          - nano
-          - nano-default-editor
-          - apr-util-openssl
-          - apr-util-lmdb
-          - apr
-          - apr-util
-          - toolbox
-          - htop
-          - nvtop
-          - tmux
-          - google-noto-sans-sundanese-fonts
-          - google-noto-sans-javanese-fonts
-          - google-noto-sans-cjk-fonts
-          - google-noto-sans-balinese-fonts
-          - kwrite
-          - kate
-          - kate-krunner-plugin
-          - kate-plugins
-
-    - type: rpm-ostree
-      repos:
-          - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-%OS_VERSION%.noarch.rpm
-      install:
-          - nvidia-vaapi-driver
-
-    - type: rpm-ostree
-      repos:
-          - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      install:
-          - starship
+          packages:
+              - firefox
+              - firefox-langpacks
+              - nano
+              - nano-default-editor
+              - apr-util-openssl
+              - apr-util-lmdb
+              - apr
+              - apr-util
+              - toolbox
+              - htop
+              - nvtop
+              - tmux
+              - google-noto-sans-sundanese-fonts
+              - google-noto-sans-javanese-fonts
+              - google-noto-sans-cjk-fonts
+              - google-noto-sans-balinese-fonts
+              - kwrite
+              - kate
+              - kate-krunner-plugin
+              - kate-plugins
 
     - type: script
       scripts:
