@@ -1,0 +1,5 @@
+[packages.twingate.com_rpm_]
+name=Twingate rpm packages repo
+baseurl=https://packages.twingate.com/rpm/
+enabled=1
+gpgcheck=0
