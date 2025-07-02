@@ -29,11 +29,11 @@ modules:
               - nextcloud-client-dolphin
               - nu
               - bootc
-              - libva-nvidia-driver
               - ksshaskpass
               - uv
               - starship
               - nvidia-vaapi-driver
+              - libva-nvidia-driver
       remove:
           packages:
               - firefox
