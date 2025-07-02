@@ -19,6 +19,8 @@ modules:
           cleanup: true
           copr:
               - atim/starship
+          files:
+              - twingate.repo
           nonfree: rpmfusion
       install:
           packages:
@@ -29,6 +31,7 @@ modules:
               - uv
               - starship
               - nvidia-vaapi-driver
+              - twingate
       remove:
           packages:
               - firefox
@@ -51,14 +54,6 @@ modules:
               - kate
               - kate-krunner-plugin
               - kate-plugins
-
-    - type: script
-      scripts:
-          - add-twingate-package-repo.sh
-
-    - type: rpm-ostree
-      install:
-          - twingate
 
     - type: default-flatpaks
       notify: true
