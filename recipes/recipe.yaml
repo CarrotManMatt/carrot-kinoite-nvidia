@@ -24,16 +24,11 @@ modules:
           packages:
               - micro
               - fastfetch
-              - langpacks-en
-              - nvidia-container-toolkit
               - nextcloud-client-dolphin
               - nu
-              - bootc
-              - ksshaskpass
               - uv
               - starship
               - nvidia-vaapi-driver
-              - libva-nvidia-driver
       remove:
           packages:
               - firefox
