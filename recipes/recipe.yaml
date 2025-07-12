@@ -90,8 +90,8 @@ modules:
               - org.mixxx.Mixxx
               - com.usebottles.bottles
               - io.github.dvlv.boxbuddyrs
-              - com.mojang.Minecraft
               - org.openrgb.OpenRGB
+              - org.prismlauncher.PrismLauncher
       system:
           repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
           repo-name: flathub-system
