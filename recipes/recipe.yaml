@@ -57,8 +57,15 @@ modules:
 
     - type: default-flatpaks
       configurations:
+        - scope: system
+          notify: true
+          repo:
+              name: flathub-system
+
         - scope: user
           notify: true
+          repo:
+              name: flathub-user
           install:
               - com.google.Chrome
               - com.discordapp.Discord
