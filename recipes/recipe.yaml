@@ -61,11 +61,13 @@ modules:
           notify: true
           repo:
               name: flathub-system
+              title: Flathub (System)
 
         - scope: user
           notify: true
           repo:
               name: flathub-user
+              title: Flathub
           install:
               - com.google.Chrome
               - com.discordapp.Discord
