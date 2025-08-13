@@ -62,12 +62,14 @@ modules:
           repo:
               name: flathub-system
               title: Flathub (System)
+              priority: 2
 
         - scope: user
           notify: true
           repo:
               name: flathub-user
               title: Flathub
+              priority: 1
           install:
               - com.google.Chrome
               - com.discordapp.Discord
