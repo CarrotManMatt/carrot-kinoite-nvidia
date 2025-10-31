@@ -23,6 +23,7 @@ modules:
               - twingate.repo
           nonfree: rpmfusion
       install:
+          skip-unavailable: true
           packages:
               - micro
               - fastfetch
