@@ -94,6 +94,7 @@ modules:
               - io.github.dvlv.boxbuddyrs
               - org.openrgb.OpenRGB
               - org.prismlauncher.PrismLauncher
+              - io.github.wartybix.Constrict
 
     - type: chezmoi
       repository: "--ssh CarrotManMatt"
