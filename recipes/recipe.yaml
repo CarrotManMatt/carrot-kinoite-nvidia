@@ -2,7 +2,7 @@ name: carrot-kinoite-nvidia
 description: CarrotManMatt's personal custom linux image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-nvidia
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite-nvidia
 image-version: latest
 
 modules:
