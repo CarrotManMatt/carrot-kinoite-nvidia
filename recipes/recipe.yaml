@@ -23,7 +23,6 @@ modules:
               - twingate.repo
           nonfree: rpmfusion
       install:
-          skip-unavailable: true
           packages:
               - micro
               - fastfetch
@@ -31,8 +30,6 @@ modules:
               - nu
               - uv
               - starship
-              - nvidia-vaapi-driver
-              - libva-nvidia-driver
               - twingate
       remove:
           packages:
