@@ -108,4 +108,16 @@ modules:
       scripts:
           - hide-default-kde-apps.sh
 
+    - type: os-release
+      properties:
+          NAME: carrot-kinoite-nvidia
+          PRETTY_NAME: carrot-kinoite OS for Nvidia - (FROM Fedora Kinoite)
+          DEFAULT_HOSTNAME: carrot-kinoite
+          HOME_URL: https://github.com/CarrotManMatt/carrot-kinoite-nvidia
+          DOCUMENTATION_URL: https://github.com/CarrotManMatt/carrot-kinoite-nvidia/blob/main/README.adoc
+          SUPPORT_URL: https://github.com/CarrotManMatt/carrot-kinoite-nvidia/issues
+          BUG_REPORT_URL: https://github.com/CarrotManMatt/carrot-kinoite-nvidia/issues
+          VARIANT: Kinoite
+          VARIANT_ID: kinoite
+
     - type: signing
