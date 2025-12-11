@@ -32,6 +32,7 @@ modules:
               - uv
               - starship
               - nvidia-vaapi-driver
+              - libva-nvidia-driver
               - twingate
       remove:
           packages:
