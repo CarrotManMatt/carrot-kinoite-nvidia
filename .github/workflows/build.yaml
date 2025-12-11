@@ -12,8 +12,8 @@ on:
     workflow_dispatch:  # Allow manually triggering builds
 
 concurrency:  # Only run one build at a time
-  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+    cancel-in-progress: true
 
 jobs:
     bluebuild:
@@ -31,7 +31,7 @@ jobs:
 
         steps:
             - name: Build Custom Image
-              uses: blue-build/github-action@v1.8  # The build is fully handled by the reusable GitHub action
+              uses: blue-build/github-action@v1.10
               with:
                   recipe: ${{ matrix.recipe }}
                   cosign_private_key: ${{ secrets.SIGNING_SECRET }}
