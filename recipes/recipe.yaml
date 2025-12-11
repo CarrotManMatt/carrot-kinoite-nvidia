@@ -54,10 +54,6 @@ modules:
               - kate-krunner-plugin
               - kate-plugins
 
-    - type: script
-      snippets:
-          - "curl -fsSL https://tombi-toml.github.io/tombi/install.sh | sh"
-
     - type: default-flatpaks
       configurations:
         - scope: system
