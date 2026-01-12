@@ -76,9 +76,8 @@ modules:
           install:
               - com.google.Chrome
               - com.discordapp.Discord
-              - org.linuxshowplayer.LinuxShowPlayer
               - com.valvesoftware.Steam
-              - com.heroicgameslauncher.hgl
+              # - com.heroicgameslauncher.hgl
               - com.getpostman.Postman
               - org.nickvision.tubeconverter
               - org.audacityteam.Audacity
@@ -90,11 +89,10 @@ modules:
               - com.bitwarden.desktop
               - org.openstreetmap.josm
               - org.videolan.VLC
-              - us.zoom.Zoom
               - org.mixxx.Mixxx
               - com.usebottles.bottles
               - io.github.dvlv.boxbuddyrs
-              - org.openrgb.OpenRGB
+              # - org.openrgb.OpenRGB
               - org.prismlauncher.PrismLauncher
               - io.github.wartybix.Constrict
 
