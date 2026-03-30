@@ -6,8 +6,8 @@ CarrotManMatt's Personal Custom Linux Image
 
 == Customisation
 
-This image is based on https://universal-blue.org[Universal Blue]'s https://github.com/ublue-os/nvidia/pkgs/container/kinoite-nvidia[`+kinoite-nvidia+` base image].
-It uses https://blue-build.org[BlueBuild] to apply the customisations on top of this base.
+This image is based on BlueBuild's https://github.com/blue-build/base-images[`+fedora-kinoite-nvidia+` base image].
+It uses a https://blue-build.org[BlueBuild] recipe to apply the customisations on top of this base.
 The details of what has been customised from the base image are described in link:recipes/recipe.yaml[the `+recipe.yaml+` file].
 
 == ISO
