@@ -110,6 +110,12 @@ modules:
       scripts:
           - hide-default-kde-apps.sh
 
+    - type: justfiles
+      validate: true
+      install: false
+      include:
+          - uv-upgrade.just
+
     - type: os-release
       properties:
           NAME: carrot-kinoite-nvidia
