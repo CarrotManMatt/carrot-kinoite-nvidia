@@ -110,7 +110,8 @@ modules:
 
     - type: script
       snippets:
-          - 'patch < "${CONFIG_DIRECTORY}/patches/just-update.patch"'
+          - "cat /usr/share/bluebuild/justfiles/00-default.just | echo"
+          - 'patch -i "${CONFIG_DIRECTORY}/patches/just-update.patch"'
       scripts:
           - hide-default-kde-apps.sh
 
