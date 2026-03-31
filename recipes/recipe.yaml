@@ -32,6 +32,7 @@ modules:
               - starship
               - twingate
               - shellcheck
+              - patch
       remove:
           packages:
               - firefox
@@ -109,7 +110,7 @@ modules:
 
     - type: script
       snippets:
-          - 'patch < "${CONFIG_DIRECTORY}/patches/uv-update.patch"'
+          - 'patch < "${CONFIG_DIRECTORY}/patches/just-update.patch"'
       scripts:
           - hide-default-kde-apps.sh
 
