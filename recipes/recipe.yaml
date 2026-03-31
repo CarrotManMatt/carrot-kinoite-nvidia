@@ -109,9 +109,6 @@ modules:
               - Noto Color Emoji
 
     - type: script
-      snippets:
-          - "cat /usr/share/bluebuild/justfiles/00-default.just | echo"
-          - 'patch -i "${CONFIG_DIRECTORY}/patches/just-update.patch"'
       scripts:
           - hide-default-kde-apps.sh
 
