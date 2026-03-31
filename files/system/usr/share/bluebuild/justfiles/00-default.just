@@ -145,7 +145,7 @@ update VERB_LEVEL="full":
     update_command "flatpak update -y"
 
     # Run uv tool upgrade
-    update_command "uv tool upgrade --all --refresh"
+    update_command "uv tool upgrade --all"
 
     # Run distrobox upgrade
     update_command "distrobox upgrade --all"
