@@ -108,14 +108,10 @@ modules:
               - Noto Color Emoji
 
     - type: script
+      snippets:
+          - 'patch < "${CONFIG_DIRECTORY}/patches/uv-update.patch"'
       scripts:
           - hide-default-kde-apps.sh
-
-    - type: justfiles
-      validate: true
-      install: false
-      include:
-          - uv-upgrade.just
 
     - type: os-release
       properties:
