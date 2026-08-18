@@ -148,7 +148,7 @@ update VERB_LEVEL="full":
     update_command "uv tool upgrade --all"
 
     # Run distrobox upgrade
-    update_command "distrobox upgrade --all"
+    # update_command "distrobox upgrade --all"
 
 alias changelog := changelogs
 
