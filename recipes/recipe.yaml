@@ -14,6 +14,10 @@ modules:
           # Put configuration files you want in /etc/ on a booted system in files/system/usr/etc/ in the image.
           # Read more in files module reference.
 
+    - type: script
+      snippets:
+          - "dnf versionlock add 'qt6-*'"
+
     - type: dnf
       repos:
           cleanup: true
