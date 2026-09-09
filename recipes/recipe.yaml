@@ -37,6 +37,7 @@ modules:
               - twingate
               - shellcheck
               - patch
+              - git-lfs
       remove:
           packages:
               - firefox
