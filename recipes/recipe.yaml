@@ -130,3 +130,5 @@ modules:
           VARIANT_ID: kinoite
 
     - type: signing
+
+    - type: initramfs
