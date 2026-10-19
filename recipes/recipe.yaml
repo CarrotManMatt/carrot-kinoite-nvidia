@@ -61,12 +61,6 @@ modules:
               - kate-krunner-plugin
               - kate-plugins
 
-    - type: rpm-ostree  # NOTE: rpm-ostree has to be used for netbird because the postinstall script fails under the dnf module (https://github.com/netbirdio/netbird/issues/5068)
-      repos:
-          - netbird.repo
-      install:
-          - netbird
-
     - type: script
       snippets:
           - "curl -fsSL https://tombi-toml.github.io/tombi/install.sh | sh -s -- --install-dir /usr/bin"
