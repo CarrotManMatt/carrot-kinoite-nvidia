@@ -26,8 +26,6 @@ modules:
           cleanup: true
           copr:
               - atim/starship
-          files:
-              - twingate.repo
           nonfree: rpmfusion
       install:
           packages:
@@ -37,7 +35,6 @@ modules:
               - nu
               - uv
               - starship
-              - twingate
               - shellcheck
               - patch
               - git-lfs
@@ -63,6 +60,12 @@ modules:
               - kate
               - kate-krunner-plugin
               - kate-plugins
+
+    - type: rpm-ostree  # NOTE: rpm-ostree has to be used for netbird because the postinstall script fails under the dnf module (https://github.com/netbirdio/netbird/issues/5068)
+      repos:
+          - netbird.repo
+      install:
+          - netbird
 
     - type: script
       snippets:
