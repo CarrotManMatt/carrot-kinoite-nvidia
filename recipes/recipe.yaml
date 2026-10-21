@@ -64,6 +64,7 @@ modules:
     - type: script
       snippets:
           - "curl -fsSL https://tombi-toml.github.io/tombi/install.sh | sh -s -- --install-dir /usr/bin"
+          - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
 
     - type: default-flatpaks
       configurations:
