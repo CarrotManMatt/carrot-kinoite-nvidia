@@ -84,7 +84,7 @@ check-idle-power-draw:
 
 alias upgrade := update
 
-# Update system, flatpaks, containers and uv tools all at once
+# Update system, Flatpaks, uv tools and Python versions all at once
 update VERB_LEVEL="full":
     #!/usr/bin/bash
     if [ {{ VERB_LEVEL }} = "help" ]; then
@@ -146,6 +146,9 @@ update VERB_LEVEL="full":
 
     # Run uv tool upgrade
     update_command "uv tool upgrade --all"
+
+    # Run uv python upgrade
+    update_command "uv python upgrade"
 
     # Run distrobox upgrade
     # update_command "distrobox upgrade --all"
