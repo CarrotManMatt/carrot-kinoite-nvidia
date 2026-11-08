@@ -95,15 +95,16 @@ modules:
               - com.obsproject.Studio
               - com.spotify.Client
               - com.nextcloud.desktopclient.nextcloud
-              - com.bitwarden.desktop
               - org.openstreetmap.josm
               - org.videolan.VLC
               - org.mixxx.Mixxx
-              - com.usebottles.bottles
+              # - com.usebottles.bottles
               - io.github.dvlv.boxbuddyrs
               # - org.openrgb.OpenRGB
               - org.prismlauncher.PrismLauncher
               - io.github.wartybix.Constrict
+              - fr.handbrake.ghb
+              - org.kde.kdenlive
 
     - type: chezmoi
       repository: "--ssh CarrotManMatt"
