@@ -38,6 +38,9 @@ modules:
               - shellcheck
               - patch
               - git-lfs
+              - sddm
+              - sddm-kcm
+              - sddm-wayland-plasma
       remove:
           packages:
               - firefox
@@ -60,6 +63,14 @@ modules:
               - kate
               - kate-krunner-plugin
               - kate-plugins
+
+    - type: systemd
+      system:
+          disabled:
+            - plasmalogin.service
+            - plasma-setup.service
+          enabled:
+            - sddm.service
 
     - type: script
       snippets:
@@ -132,6 +143,4 @@ modules:
           VARIANT: Kinoite
           VARIANT_ID: kinoite
 
-    - type: initramfs
     - type: signing
-    
